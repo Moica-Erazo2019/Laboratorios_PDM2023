@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Tencent_img"
+        android:layout_width="94dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="@dimen/medium_gap"
+        app:layout_constraintBottom_toBottomOf="@+id/Fivecent_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Fivecent_img"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ten_cents" />
+
+    <ImageView
+        android:id="@+id/Cora_img"
+        android:layout_width="94dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Fivecent_img"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/Fivecent_img"
+        app:layout_constraintTop_toBottomOf="@+id/Fivecent_img"
+        app:layout_constraintVertical_bias="0.652"
+        app:srcCompat="@drawable/quarter" />
+
+    <ImageView
+        android:id="@+id/Fivecent_img"
+        android:layout_width="94dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/Cora_img"
+        app:layout_constraintEnd_toStartOf="@+id/Tencent_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Total_Text"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/five_cents" />
+
+    <ImageView
+        android:id="@+id/Dolar_img"
+        android:layout_width="94dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Tencent_img"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/Tencent_img"
+        app:layout_constraintTop_toBottomOf="@+id/Tencent_img"
+        app:layout_constraintVertical_bias="0.51"
+        app:srcCompat="@drawable/one_dollar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="197dp"
+        android:layout_height="34dp"
+        android:text="Cantidad de Dinero"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Total_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Total_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/Total_Size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+</androidx.constraintlayout.widget.ConstraintLayout>
