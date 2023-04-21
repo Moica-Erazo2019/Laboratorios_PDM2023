@@ -45,7 +45,7 @@ class ResultsActivity : AppCompatActivity() {
         btnShare.setOnClickListener(){
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Name: $name\nEmail $email\ncellponeNUmber")
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Name: $name\nEmail $email\ncellponeNumber $phone")
 
             startActivity(Intent.createChooser(shareIntent, "Share to:"))
         }
