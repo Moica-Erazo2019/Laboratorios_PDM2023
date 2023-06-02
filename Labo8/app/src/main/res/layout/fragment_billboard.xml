@@ -9,12 +9,7 @@
             type="com.example.laboratorio05.ui.movie.MovieViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.movie.BillboardFragment"
-        android:background="@color/backgroundLayout">
+
 
         <!-- TODO: Update blank fragment layout -->
 
@@ -58,4 +53,5 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
